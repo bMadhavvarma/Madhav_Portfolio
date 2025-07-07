@@ -3,6 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import docspotImg from "../assets/docspot.jpg";
+import taskManagerImg from "../assets/taskmanager.png";
+import superAppImg from "../assets/super app.png";
+import ticTacToeImg from "../assets/tic-tac-toe.webp";
+import adminImg from "../assets/admin.jpeg";
+import careerImg from "../assets/career.png";
+import weatherImg from "../assets/weather.webp";
+import calculatorImg from "../assets/calculator.jpg";
+
+
 import {
   User,
   Code,
@@ -19,6 +29,7 @@ import {
   Briefcase,
   ExternalLink,
   Github,
+  Award,
 } from "lucide-react";
 import avatarImage from "@/assets/rai-babu-avatar.jpg";
 
@@ -36,13 +47,19 @@ const Portfolio = () => {
     },
     {
       name: "Node.js",
-      usage: 85,
-      tag: "⚙️ Backend Pro",
-      projects: "6+ projects",
+      usage: 75,
+      tag: "⚙️ Backend",
+      projects: "5+ projects",
+    },
+    {
+      name: "Express.js",
+      usage: 75,
+      tag: "⚙️ Backend",
+      projects: "5+ projects",
     },
     {
       name: "JavaScript",
-      usage: 95,
+      usage: 90,
       tag: "🔥 Core Stack",
       projects: "10+ projects",
     },
@@ -53,93 +70,134 @@ const Portfolio = () => {
       tag: "🎨 Styling",
       projects: "7+ projects",
     },
-    { name: "Java", usage: 70, tag: "☕ Enterprise", projects: "4+ projects" },
-    {
-      name: "Spring Boot",
-      usage: 65,
-      tag: "🚀 Framework",
-      projects: "3+ projects",
-    },
-    { name: "MySQL", usage: 60, tag: "💾 Database", projects: "4+ projects" },
+    { name: "Java", usage: 70, tag: "☕ Programming Language" },
+  
+    { name: "MySQL", usage: 60, tag: "Programming Language" },
     {
       name: "Git",
       usage: 88,
       tag: "📝 Version Control",
       projects: "All projects",
     },
-    { name: "Docker", usage: 45, tag: "🐳 DevOps", projects: "2+ projects" },
+ 
   ];
 
   const projects = [
     {
-      name: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React and Node.js",
-      category: "web development",
-      image: "/placeholder.svg",
-      github: "https://github.com/madhav/ecommerce",
-      demo: "https://ecommerce-demo.com",
+      name: "DocSpot",
+      description: "Responsive doctor appointment booking app with role-based access using MERN stack",
+      category: "Mern Stack",
+      image: docspotImg,
+      github: "https://github.com/bMadhavvarma/Docspot",
+      demo: "https://docspot-mauve.vercel.app/login",
     },
     {
-      name: "Task Management App",
-      description: "Modern task management with real-time collaboration",
-      category: "web development",
-      image: "/placeholder.svg",
-      github: "https://github.com/madhav/taskmanager",
-      demo: "https://taskmanager-demo.com",
+      name: "MERN Task Manager",
+      description: "Full-stack task manager with CRUD operations using MERN stack",
+      category: "Mern Stack",
+      image: taskManagerImg,
+      github: "https://github.com/bMadhavvarma/MERN_TASK",
+      demo: "https://mern-taskmanager-chi.vercel.app/",
     },
     {
-      name: "Weather Dashboard",
-      description: "Beautiful weather app with location-based forecasts",
-      category: "web development",
-      image: "/placeholder.svg",
-      github: "https://github.com/madhav/weather",
-      demo: "https://weather-demo.com",
+      name: "Super App",
+      description: "AI-powered no-code platform aggregating tools like Gemini, Hugging Face, and more",
+      category: "No-Code Platform",
+      image: superAppImg,
+      github: "https://github.com/bMadhavvarma/super-ai-station",
+      demo: "https://super-ai-station.vercel.app/",
     },
     {
-      name: "Portfolio Website",
-      description: "Responsive portfolio website with modern design",
-      category: "web development",
-      image: "/placeholder.svg",
-      github: "https://github.com/madhav/portfolio",
-      demo: "https://portfolio-demo.com",
+      name: "Tic Tac Toe",
+      description: "Classic Tic Tac Toe game built with React featuring CPU opponent logic",
+      category: "React js",
+      image: ticTacToeImg,
+      github: "https://github.com/bMadhavvarma/TicTacToe",
+      demo: "https://tic-tac-toe-sqlu.vercel.app/",
     },
+    {
+      name: "Admin Task Manager",
+      description: "Task manager dashboard built in React with role-based UI for admin control",
+      category: "React js",
+      image: adminImg,
+      github: "https://github.com/bMadhavvarma/TaskManagerX",
+      demo: "https://task-manager-x-nine.vercel.app/",
+    },
+    {
+      name: "Career Guidance Website",
+      description: "Static website built with HTML, CSS, and JS to guide 10th & 12th students in choosing careers",
+      category: "Html Css Js",
+      image: careerImg,
+      github: "https://github.com/bMadhavvarma/Career-Guidance",
+      demo: "https://career-guidance-nu.vercel.app/",
+    },
+    {
+      name: "Weather App",
+      description: "Weather forecasting app using Axios with real-time data and responsive UI",
+      category: "Html Css Js",
+      image: weatherImg,
+      github: "https://github.com/bMadhavvarma/Weather",
+      demo: "https://bmadhavvarma.github.io/Weather/",
+    },
+    {
+      name: "Calculator",
+      description: "Basic calculator built with HTML, CSS, and JavaScript for simple arithmetic operations",
+      category: "Html Css Js",
+      image: calculatorImg,
+      github: "https://github.com/bMadhavvarma/Calculator",
+      demo: "https://bmadhavvarma.github.io/Calculator/",
+    }
   ];
+  
 
   const education = [
     {
-      institution: "Indian Institute of Technology",
-      period: "2018 - 2022",
-      degree: "Bachelor of Technology in Computer Science",
+      institution: "Sri Venkateswara College of Engineering, Tirupati",
+      period: "2022 - 2026",
+      degree: "Bachelor of Technology in Information Technology",
     },
     {
-      institution: "Delhi Public School",
-      period: "2016 - 2018",
-      degree: "Higher Secondary Education",
+      institution: "Krishna Chaitanya Junior College, Nellore",
+      period: "2020 - 2022",
+      degree: "Intermediate Education (MPC)"
+    },
+    {
+      institution: "Viswa Bharathi [E.M] High School, Nellore",
+      period: "~2020",
+      degree: "High School Education (SSC)"
     },
   ];
 
-  const experience = [
+  const achievements = [
     {
-      company: "Tech Solutions Pvt Ltd",
-      period: "2022 Jan - Present",
-      position: "Full Stack Developer",
+      title: "Salesforce Certified AI Associate",
+      date: "2025",
+      type: "Certification",
       description:
-        "Developing scalable web applications using React, Node.js, and MongoDB",
+        "Validated foundational AI knowledge and its practical usage in real-world business settings.",
     },
     {
-      company: "Digital Innovations",
-      period: "2021 Jun - 2021 Dec",
-      position: "Frontend Developer Intern",
+      title: "All India NCAT 2025 – Naukri Campus",
+      date: "2025",
+      type: "Achievement",
       description:
-        "Built responsive user interfaces and collaborated with design team",
+        "Secured an All-India Rank of 2552 with a score of 48/60. Percentiles: Reasoning – 95.38, Quant – 87.74, Verbal – 73.72. Ranked in the 94.68 percentile nationwide and 96.15 percentile in Andhra Pradesh.",
+    },
+    {
+      title: "Google Developer Group (GDG) Core Team Member",
+      date: "Sep 2024 –Feb 2025",
+      type: "Leadership",
+      description:
+        "Actively contributed to organizing tech events, workshops, and developer community initiatives at campus level.",
     },
   ];
+  
 
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-white">
       <div className="flex max-w-7xl mx-auto">
         {/* Sidebar */}
-        <div className="w-80 bg-[#2a2a2a] p-8 min-h-screen">
+        <div className="w-80 bg-[#2a2a2a] p-8 h-screen fixed left-0 top-0 overflow-y-auto">
           <div className="text-center mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-2xl overflow-hidden bg-[#3a3a3a]">
               <img
@@ -199,7 +257,7 @@ const Portfolio = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 p-8">
+        <div className="flex-1 ml-80 p-8 overflow-y-auto max-h-screen">
           {/* Navigation */}
           <div className="mb-8">
             <div className="bg-[#2a2a2a] rounded-full p-2 inline-flex space-x-2">
@@ -362,32 +420,27 @@ const Portfolio = () => {
 
               {/* Experience */}
               <div>
-                <div className="flex items-center space-x-3 mb-8">
-                  <Briefcase className="w-6 h-6 text-orange-400" />
-                  <h3 className="text-2xl font-bold">Experience</h3>
-                </div>
+  <div className="flex items-center space-x-3 mb-8">
+    <Award className="w-6 h-6 text-orange-400" />
+    <h3 className="text-2xl font-bold">Certifications & Achievements</h3>
+  </div>
 
-                <div className="space-y-6">
-                  {experience.map((exp, index) => (
-                    <div key={index} className="relative pl-8">
-                      <div className="absolute left-0 top-2 w-3 h-3 bg-orange-400 rounded-full"></div>
-                      {index < experience.length - 1 && (
-                        <div className="absolute left-1.5 top-5 w-0.5 h-20 bg-[#3a3a3a]"></div>
-                      )}
-                      <h4 className="text-lg font-semibold mb-1">
-                        {exp.company}
-                      </h4>
-                      <p className="text-orange-400 text-sm mb-2">
-                        {exp.period}
-                      </p>
-                      <p className="text-gray-300 font-medium mb-2">
-                        {exp.position}
-                      </p>
-                      <p className="text-gray-400 text-sm">{exp.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+  <div className="space-y-6">
+    {achievements.map((item, index) => (
+      <div key={index} className="relative pl-8">
+        <div className="absolute left-0 top-2 w-3 h-3 bg-orange-400 rounded-full"></div>
+        {index < achievements.length - 1 && (
+          <div className="absolute left-1.5 top-5 w-0.5 h-20 bg-[#3a3a3a]"></div>
+        )}
+        <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
+        <p className="text-orange-400 text-sm mb-2">{item.date}</p>
+        <p className="text-gray-300 font-medium mb-2">{item.type}</p>
+        <p className="text-gray-400 text-sm">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
             </div>
           )}
 
@@ -439,13 +492,13 @@ const Portfolio = () => {
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg p-6 text-center">
                   <div className="text-3xl font-bold text-orange-400 mb-2">
-                    5+
+                    1.5+
                   </div>
                   <div className="text-gray-400 text-sm">Years Experience</div>
                 </div>
                 <div className="bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg p-6 text-center">
                   <div className="text-3xl font-bold text-orange-400 mb-2">
-                    50+
+                    25+
                   </div>
                   <div className="text-gray-400 text-sm">
                     Projects Completed
@@ -453,7 +506,7 @@ const Portfolio = () => {
                 </div>
                 <div className="bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg p-6 text-center">
                   <div className="text-3xl font-bold text-orange-400 mb-2">
-                    10+
+                    5+
                   </div>
                   <div className="text-gray-400 text-sm">
                     Technologies Mastered
@@ -464,75 +517,66 @@ const Portfolio = () => {
           )}
 
           {/* Projects Section */}
-          {currentSection === "projects" && (
-            <div>
-              <h2 className="text-4xl font-bold mb-4">Projects</h2>
-              <div className="w-12 h-1 bg-orange-400 mb-8"></div>
+ {currentSection === 'projects' && (
+  <div>
+    <h2 className="text-4xl font-bold mb-4">Projects</h2>
+    <div className="w-12 h-1 bg-orange-400 mb-8"></div>
 
-              <p className="text-gray-400 mb-8">Web development</p>
+    <p className="text-gray-400 mb-8">Web development</p>
 
-              <div className="relative">
-                <div className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4">
-                  {projects.map((project, index) => (
-                    <Card
-                      key={index}
-                      className="min-w-[320px] bg-[#2a2a2a] border-[#3a3a3a] overflow-hidden hover:bg-[#333] transition-colors flex-shrink-0"
-                    >
-                      <div className="aspect-video bg-[#3a3a3a] flex items-center justify-center">
-                        <img
-                          src={project.image}
-                          alt={project.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <CardContent className="p-6">
-                        <h4 className="text-lg font-semibold mb-2">
-                          {project.name}
-                        </h4>
-                        <p className="text-gray-400 text-sm mb-4">
-                          {project.category}
-                        </p>
-                        <p className="text-gray-300 text-sm mb-4">
-                          {project.description}
-                        </p>
-                        <div className="flex space-x-2">
-                          <Button
-                            size="sm"
-                            variant="outline"
-                            asChild
-                            className="flex-1 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black"
-                          >
-                            <a
-                              href={project.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <Github className="w-4 h-4 mr-1" />
-                              Code
-                            </a>
-                          </Button>
-                          <Button
-                            size="sm"
-                            className="flex-1 bg-orange-400 text-black hover:bg-orange-500"
-                            asChild
-                          >
-                            <a
-                              href={project.demo}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <ExternalLink className="w-4 h-4 mr-1" />
-                              Demo
-                            </a>
-                          </Button>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className="group relative bg-gradient-to-br from-[#2a2a2a] to-[#222] border border-[#3a3a3a] rounded-xl overflow-hidden hover:border-orange-400/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-400/10"
+        >
+          {/* Image & Icons */}
+          <div className="relative aspect-video bg-[#3a3a3a]">
+            <img
+              src={project.image}
+              alt={project.name}
+              className="w-full h-full object-cover"
+            />
+
+            {/* Hover Icons */}
+            <div className="absolute top-2 right-2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#1a1a1a]/80 backdrop-blur p-2 rounded-full text-orange-400 hover:text-white hover:bg-orange-500 transition"
+              >
+                <Github className="w-4 h-4" />
+              </a>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#1a1a1a]/80 backdrop-blur p-2 rounded-full text-orange-400 hover:text-white hover:bg-orange-500 transition"
+              >
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </div>
-          )}
+          </div>
+
+          {/* Project Info */}
+          <div className="p-6">
+            <h4 className="text-xl font-bold text-white group-hover:text-orange-400 transition-colors mb-2">
+              {project.name}
+            </h4>
+            <p className="text-gray-400 text-sm">{project.category}</p>
+          </div>
+
+          {/* Floating Background Effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-400/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+
+
 
           {/* Contact Section */}
           {currentSection === "contact" && (
@@ -555,10 +599,10 @@ const Portfolio = () => {
                     <div>
                       <h4 className="text-lg font-semibold">Email</h4>
                       <a
-                        href="mailto:madhav@gmail.com"
+                        href="mailto:varmamadhav71@gmail.com"
                         className="text-orange-400 hover:underline"
                       >
-                        madhav@gmail.com
+                        varmamadhav71@gmail.com
                       </a>
                     </div>
                   </div>
@@ -570,10 +614,10 @@ const Portfolio = () => {
                     <div>
                       <h4 className="text-lg font-semibold">Phone</h4>
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+918688500291"
                         className="text-orange-400 hover:underline"
                       >
-                        +91-98********
+                        +91-8688500291
                       </a>
                     </div>
                   </div>
@@ -585,7 +629,7 @@ const Portfolio = () => {
                     <div>
                       <h4 className="text-lg font-semibold">Location</h4>
                       <p className="text-gray-400">
-                        Hyderabad, Telangana, India
+                        Nellore, Andhra Pradesh, India
                       </p>
                     </div>
                   </div>
